@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Actors Page</title>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<style type="text/css">
+table{
+margin:0 auto;
+border: 1px solid black;
+min-width: 400px;
+font-family:Verdana;
+font-size:11px;
+cursor:default;
+}
+
+.names:hover{
+background-color: yellow;
+}
+</style>
+</head>
+<body onload="init_suggest();">
+<form>
+<table>
+<tr>
+<td><label>Actor Name </label></td><td><input type = "text" id="actname" onkeyup="search_actor();"></td>
+</tr>
+</table>
+</form>
+<table><tbody id="risultati"></tbody></table>
+</body>
+</html>
